@@ -16,7 +16,6 @@ const words = [
   "corazon", "nube", "arena", "viento", "vuelo", "vela", "trama"
 ];
 
-
 let currentWord = "";
 let score = 0;
 let time = 30;
@@ -81,5 +80,4 @@ inputBox.addEventListener("input", () => {
     inputBox.value = "";
   }
 });
-
 startButton.addEventListener("click", startGame);
