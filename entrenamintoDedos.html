@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrenamiento por Dedos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Entrenamiento de Teclado: Por Dedos</h1>
+
+    <div class="instructions">
+      <h2>Selecciona un dedo para entrenar</h2>
+      <p>Elige la columna de letras correspondiente al dedo que deseas practicar.</p>
+    </div>
+
+    <div class="finger-selection">
+      <button class="finger-button" id="index-finger">Índice</button>
+      <button class="finger-button" id="middle-finger">Medio</button>
+      <button class="finger-button" id="ring-finger">Anular</button>
+      <button class="finger-button" id="little-finger">Meñique</button>
+    </div>
+
+    <div class="training-area">
+      <h3>Letra a escribir:</h3>
+      <div id="letter-container" class="letter-container">Selecciona un dedo para comenzar</div>
+      <input type="text" id="input-box" placeholder="Escribe aquí..." autofocus disabled>
+      <p>Puntaje: <span id="score">0</span></p>
+      <button id="start-button">Iniciar Entrenamiento</button>
+    </div>
+
+    <a href="index.html">
+      <button id="back-to-home-button">Volver al Inicio</button>
+    </a>
+  </div>
+
+  <script src="scriptsColumnas.js"></script>
+</body>
+</html>

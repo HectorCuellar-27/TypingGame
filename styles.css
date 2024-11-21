@@ -1,5 +1,4 @@
-/* Estilos generales para ambas páginas */
-
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -8,10 +7,9 @@ body {
   padding: 0;
 }
 
-/* Contenedor principal del juego */
 .game-container {
-  max-width: 500px;
-  margin: 100px auto;
+  max-width: 600px;
+  margin: 50px auto;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -22,11 +20,11 @@ h1 {
   color: #333;
 }
 
-/* Estilos del juego de mecanografía */
-#word-container {
-  font-size: 24px;
-  color: #2c3e50;
-  margin: 20px 0;
+.info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 #input-box {
@@ -38,63 +36,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.info {
-  display: flex;
-  justify-content: space-around;
-  font-size: 18px;
-}
-
-#start-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #3498db;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#start-button:hover {
-  background-color: #2980b9;
-}
-
-/* Estilos específicos para el entrenamiento de teclado */
-#row-select {
-  padding: 10px;
-  font-size: 16px;
-  margin: 20px 0;
-  border: 2px solid #3498db;
-  border-radius: 5px;
-}
-
-#training-string {
-  font-size: 30px;
-  font-weight: bold;
-  color: #333;
-  margin: 20px 0;
-}
-
-#training-score {
-  font-size: 20px;
-  font-weight: bold;
-  color: #3498db;
-}
-
-#training-start-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #3498db;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#training-start-button:hover {
-  background-color: #2980b9;
-}
-
-/* Estilo para los botones de navegación */
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -103,14 +44,95 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: #2980b9;
 }
 
-a {
-  text-decoration: none;
-  display: block;
+button:active {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+input:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Botones específicos para los entrenamientos */
+#training-button, #finger-button {
   margin-top: 20px;
+  background-color: #27ae60; /* Verde para diferenciarlos */
+}
+
+#training-button:hover, #finger-button:hover {
+  background-color: #2ecc71; /* Verde más claro en hover */
+}
+
+#training-button:active, #finger-button:active {
+  background-color: #2ecc71; /* Verde más claro en click */
+}
+
+/* Estilos adicionales para el modo entrenamiento */
+.finger-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.finger-button {
+  margin: 0 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.finger-button:hover {
+  background-color: #2980b9;
+}
+
+.finger-button:active {
+  background-color: #2980b9;
+}
+
+#letter-container {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#start-button {
+  background-color: #e74c3c; /* Rojo para inicio */
+}
+
+#start-button:hover {
+  background-color: #c0392b;
+}
+
+#start-button:active {
+  background-color: #c0392b;
+}
+
+#back-to-home-button {
+  background-color: #8e44ad; /* Violeta para el botón de regreso */
+  color: white;
+  margin-top: 30px;
+  padding: 10px 20px;
+}
+
+#back-to-home-button:hover {
+  background-color: #9b59b6;
+}
+
+#back-to-home-button:active {
+  background-color: #9b59b6;
 }
