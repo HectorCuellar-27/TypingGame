@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrenamiento de Teclado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Entrenamiento de Teclado</h1>
+    <div>
+      <label for="row-select">Selecciona una fila:</label>
+      <select id="row-select">
+        <option value="top">Superior (QWERTYUIOP)</option>
+        <option value="middle">Media (ASDFGHJKL)</option>
+        <option value="bottom">Inferior (ZXCVBNM)</option>
+      </select>
+    </div>
+    <button id="training-start-button">Iniciar Entrenamiento</button>
+    <p>Puntaje: <span id="training-score">0</span></p>
+    <div id="training-string"></div>
+  </div>
+  <script src="scriptsEntrenaminto.js"></script>
+</body>
+</html>

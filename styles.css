@@ -1,3 +1,5 @@
+/* Estilos generales para ambas páginas */
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -6,6 +8,7 @@ body {
   padding: 0;
 }
 
+/* Contenedor principal del juego */
 .game-container {
   max-width: 500px;
   margin: 100px auto;
@@ -19,6 +22,7 @@ h1 {
   color: #333;
 }
 
+/* Estilos del juego de mecanografía */
 #word-container {
   font-size: 24px;
   color: #2c3e50;
@@ -52,4 +56,61 @@ h1 {
 
 #start-button:hover {
   background-color: #2980b9;
+}
+
+/* Estilos específicos para el entrenamiento de teclado */
+#row-select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 0;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+}
+
+#training-string {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+}
+
+#training-score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+#training-start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#training-start-button:hover {
+  background-color: #2980b9;
+}
+
+/* Estilo para los botones de navegación */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
 }
